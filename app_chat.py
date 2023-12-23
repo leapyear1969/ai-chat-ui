@@ -4,6 +4,9 @@ import joblib
 import streamlit as st
 import google.generativeai as genai
 
+# add google service account
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/jason/Documents/my_google_sercie_account.json"
+
 GOOGLE_API_KEY=os.environ.get('GOOGLE_API_KEY')
 genai.configure(api_key=GOOGLE_API_KEY)
 
