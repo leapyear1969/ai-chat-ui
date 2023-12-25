@@ -26,3 +26,8 @@ This demonstrates a simple UI (using Streamlit's [Chat elements](https://docs.st
 6. Run in your terminal: `streamlit run app_chat.py`.
     - When using a Python environment, make sure `streamlit` is the correct one associated with your environment. Seen some weirdness before with `conda` and the shell not picking up the correct `streamlit`; had to manually call it with something like `MyUser/conda/envs/my_env/bin/streamlit`.
 7. Browser should open where you can now interact with the UI! Otherwise, you might have to go to http://localhost:8501/ manually.
+8. If you want to customize the steamlib configuration file, you need to manually add the configuration file ``config.toml`` at ``~/.streamlib/``:
+   ```javascript
+        [server]
+        port = 8501
+   ```
