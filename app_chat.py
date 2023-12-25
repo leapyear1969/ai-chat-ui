@@ -4,6 +4,20 @@ import joblib
 import streamlit as st
 import google.generativeai as genai
 
+# hide deploy button
+st.markdown("""
+    <style>
+        .reportview-container {
+            margin-top: -2em;
+        }
+        
+        .stDeployButton {display:none;}
+        footer {visibility: hidden;}
+        #stDecoration {display:none;}
+    </style>
+""", unsafe_allow_html=True)
+
+
 # add google service account
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/home/jason/Documents/my_google_sercie_account.json"
 
